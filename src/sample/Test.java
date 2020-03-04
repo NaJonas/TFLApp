@@ -12,7 +12,7 @@ public class Test extends Application {
 
     @Override
     public void start(Stage primaryStage) throws Exception{
-        Parent root = FXMLLoader.load(getClass().getResource("sample.fxml"));
+        Parent root = FXMLLoader.load(getClass().getResource("home.fxml"));
         primaryStage.setTitle("Test");
         scene = new Scene(root);
         scene.getStylesheets().add(
@@ -21,6 +21,10 @@ public class Test extends Application {
         primaryStage.setScene(scene);
         primaryStage.setResizable(false);
         primaryStage.show();
+
+
+
+
 
 
 

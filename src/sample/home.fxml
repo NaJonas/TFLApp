@@ -7,7 +7,8 @@
 <?import javafx.scene.text.Font?>
 
 
-<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="601.0" prefWidth="1107.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1">
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="601.0" prefWidth="1107.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1"
+   fx:controller="sample.controllers.HomeController">
    <children>
       <VBox layoutX="14.0" layoutY="47.0" prefHeight="495.0" prefWidth="287.0">
          <children>
@@ -52,7 +53,7 @@
             </Label>
          </children>
       </VBox>
-      <Label layoutX="336.0" layoutY="160.0" prefHeight="295.0" prefWidth="745.0" text="Good service!" textFill="#cdbdbd">
+      <Label fx:id="status"  layoutX="336.0" layoutY="160.0" prefHeight="295.0" prefWidth="745.0" text="Good service!" textFill="#cdbdbd">
          <font>
             <Font size="55.0" />
          </font>
