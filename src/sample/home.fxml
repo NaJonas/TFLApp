@@ -12,32 +12,32 @@
    <children>
       <VBox layoutX="14.0" layoutY="47.0" prefHeight="495.0" prefWidth="287.0">
          <children>
-            <Button alignment="CENTER" mnemonicParsing="false" prefHeight="83.0" prefWidth="290.0" text="Circle Line" textFill="#cdbdbd">
+            <Button onMouseClicked="#onClickCircle" alignment="CENTER" mnemonicParsing="false" prefHeight="83.0" prefWidth="290.0" text="Circle Line" textFill="#cdbdbd">
                <font>
                   <Font name="DejaVu Sans Bold" size="24.0" />
                </font>
             </Button>
-            <Button alignment="CENTER" mnemonicParsing="false" prefHeight="83.0" prefWidth="290.0" text="District line" textFill="#cdbdbd">
+            <Button onMouseClicked="#onClickDistrict" alignment="CENTER" mnemonicParsing="false" prefHeight="83.0" prefWidth="290.0" text="District line" textFill="#cdbdbd">
                <font>
                   <Font name="DejaVu Sans Bold" size="24.0" />
                </font>
             </Button>
-            <Button alignment="CENTER" mnemonicParsing="false" prefHeight="83.0" prefWidth="290.0" text="Hammersmith &amp; C line" textFill="#cdbdbd">
+            <Button onMouseClicked="#onClickHammersmith" alignment="CENTER" mnemonicParsing="false" prefHeight="83.0" prefWidth="290.0" text="Hammersmith &amp; C line" textFill="#cdbdbd">
                <font>
                   <Font name="DejaVu Sans Bold" size="24.0" />
                </font>
             </Button>
-            <Button alignment="CENTER" mnemonicParsing="false" prefHeight="83.0" prefWidth="290.0" text=" Bakerloo line" textFill="#cdbdbd">
+            <Button onMouseClicked="#onClickBakerloo" alignment="CENTER" mnemonicParsing="false" prefHeight="83.0" prefWidth="290.0" text=" Bakerloo line" textFill="#cdbdbd">
                <font>
                   <Font name="DejaVu Sans Bold" size="24.0" />
                </font>
             </Button>
-            <Button alignment="CENTER" mnemonicParsing="false" prefHeight="83.0" prefWidth="290.0" text="Piccadily line" textFill="#cdbdbd">
+            <Button onMouseClicked="#onClickPiccadilly" alignment="CENTER" mnemonicParsing="false" prefHeight="83.0" prefWidth="290.0" text="Piccadily line" textFill="#cdbdbd">
                <font>
                   <Font name="DejaVu Sans Bold" size="24.0" />
                </font>
             </Button>
-            <Button alignment="CENTER" mnemonicParsing="false" prefHeight="83.0" prefWidth="290.0" text="Central line" textFill="#cdbdbd">
+            <Button onMouseClicked="#onClickCentral" alignment="CENTER" mnemonicParsing="false" prefHeight="83.0" prefWidth="290.0" text="Central line" textFill="#cdbdbd">
                <font>
                   <Font name="DejaVu Sans Bold" size="24.0" />
                </font>
@@ -46,7 +46,7 @@
       </VBox>
       <VBox layoutX="333.0" layoutY="47.0" prefHeight="83.0" prefWidth="745.0">
          <children>
-            <Label alignment="CENTER" prefHeight="84.0" prefWidth="747.0" text="Status" textFill="#cdbdbd">
+            <Label fx:id="header" alignment="CENTER" prefHeight="84.0" prefWidth="747.0" text="Status" textFill="#cdbdbd">
                <font>
                   <Font name="DejaVu Sans Bold" size="48.0" />
                </font>

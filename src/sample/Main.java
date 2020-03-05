@@ -39,7 +39,7 @@ public class Main extends Application {
         UrlConnectionReader test = new UrlConnectionReader();
 
         // Get status
-        String statusText = test.read();
+        String statusText = test.read("circle");
 
         // Status text
         Text status = new Text(statusText);

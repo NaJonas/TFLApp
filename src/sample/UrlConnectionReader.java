@@ -8,9 +8,9 @@ import java.net.HttpURLConnection;
 import java.net.URL;
 
 
-public class UrlConnectionReader {
-    public static String read() throws Exception {
-        String url = "https://api.tfl.gov.uk/Line/circle/Status?detail=true&app_id=d46d49e5&app_key=2ac0358f4a33011d62a582e5c912c430\n";
+public class UrlConnectionReader  {
+    public static String read(String id) throws Exception {
+        String url = "https://api.tfl.gov.uk/Line/" + id + "/Status?detail=true&app_id=d46d49e5&app_key=2ac0358f4a33011d62a582e5c912c430\n";
         HttpURLConnection httpClient = (HttpURLConnection) new URL(url).openConnection();
 
         // Optional default is Get
@@ -46,7 +46,7 @@ public class UrlConnectionReader {
 
 
         JSONObject myRespone = new JSONObject(temp);
-        System.out.println("Status of Circle Line: " + myRespone.getString("statusSeverityDescription"));
+        System.out.println("Status of " + id + " line: " + myRespone.getString("statusSeverityDescription"));
         return myRespone.getString("statusSeverityDescription");
 
 
